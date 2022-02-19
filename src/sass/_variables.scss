@@ -1,0 +1,116 @@
+:root {
+  --base-danger: #f9314b;
+  --base-danger-a5: rgba(249, 49, 75, 0.1);
+  --base-success: #22c03c;
+  --base-success-a5: rgba(34, 192, 60, 0.1);
+  --base-success-a10: rgba(34, 192, 60, 0.2);
+  --base-warning: #f0ad4e;
+  --base-warning-a5: rgba(251, 188, 11, 0.1);
+  --base-warning-a10: rgba(251, 188, 11, 0.2);
+  --base-dark-light: #252f5a;
+  --base-dark: #0f143a;
+  --base-darker: #070b28;
+  --base-inverted: #fff;
+  --base-0: #fafafc;
+  --base-10: #f6f6f9;
+  --base-20: #f6f6f7;
+  --base-30: #ededf4;
+  --base-40: #a1aed4;
+  --base-50: #7d8a97;
+  --base-60: #64707d;
+  --base-70: #4d5760;
+  --base-80: #333334;
+  --base-90: #132842;
+  --base-100: #0c213a;
+
+  --base-black-a5: rgba(0, 0, 0, 0.05);
+  --base-black-a10: rgba(0, 0, 0, 0.1);
+  --base-black-a15: rgba(0, 0, 0, 0.15);
+  --base-black-a20: rgba(0, 0, 0, 0.2);
+  --base-black-a30: rgba(0, 0, 0, 0.3);
+  --base-black-a40: rgba(0, 0, 0, 0.4);
+  --base-black-a50: rgba(0, 0, 0, 0.5);
+  --base-black-a60: rgba(0, 0, 0, 0.6);
+  --base-black-a80: rgba(0, 0, 0, 0.8);
+
+  --base-white-a5: rgba(255, 255, 255, 0.05);
+  --base-white-a10: rgba(255, 255, 255, 0.1);
+  --base-white-a20: rgba(255, 255, 255, 0.2);
+  --base-white-a30: rgba(255, 255, 255, 0.3);
+  --base-white-a40: rgba(255, 255, 255, 0.4);
+  --base-white-a50: rgba(255, 255, 255, 0.5);
+  --base-white-a60: rgba(255, 255, 255, 0.6);
+  --base-white-a80: rgba(255, 255, 255, 0.8);
+  --base-white-a90: rgba(255, 255, 255, 0.8);
+
+  --fs-xxs: 0.65rem;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 1.875rem;
+  --fs-4xl: 2.25rem;
+  --fs-5xl: 3rem;
+  --fs-6xl: 5rem;
+
+  --su-1: 0.25rem;
+  --su-2: 0.5rem;
+  --su-3: 0.75rem;
+  --su-4: 1rem;
+  --su-5: 1.25rem;
+  --su-6: 1.5rem;
+  --su-7: 2rem;
+  --su-8: 3rem;
+  --su-9: 8rem;
+  --su-10: 10rem;
+
+  --z-negative: -1;
+  --z-elevate: 1;
+  --z-sticky: 100;
+  --z-drawer: 200;
+  --z-modal: 300;
+  --z-dropdown: 400;
+  --z-popover: 500;
+  --z-header: 98;
+  --z-overlay: 998;
+  --z-sidebar: 999;
+
+  --shadow-xxs: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  --shadow-xs: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --shadow-sm: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --shadow-md: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow-lg: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --shadow-xl: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --border-color: var(--base-black-a5);
+
+  --border: var(--borderWidth, 1px) var(--borderStyle, solid)
+    var(--borderColor, var(--border-color));
+
+  --radius-0: 0rem;
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 2.25rem;
+  --radius-xl: 5rem;
+  --radius-pill: 50em;
+  --radius-circle: 50%;
+
+  --gradient-dark: transparent
+    linear-gradient(180deg, var(--base-darker) 0%, var(--base-dark) 100%) 0% 0%
+    no-repeat padding-box;
+  --gradient-warning: transparent
+    linear-gradient(180deg, var(--base-warning) 0%, #e6683c 100%) 0% 0%
+    no-repeat padding-box;
+  --gradient-success: transparent
+    linear-gradient(180deg, var(--base-success) 0%, #068a70 100%) 0% 0%
+    no-repeat padding-box;
+  --gradient-danger: transparent
+    linear-gradient(180deg, var(--base-danger) 0%, #d2273c 100%) 0% 0% no-repeat
+    padding-box;
+
+  --transition-base: all 0.3s ease-out;
+}

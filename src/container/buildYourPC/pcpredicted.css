@@ -1,0 +1,10 @@
+.intelText {
+  color: var(--base-warning, #0071c5);
+}
+
+.amdText {
+  color: var(--base-danger, #e50926);
+}
+/* svg.injected-svg path {
+  fill: #eead42;
+} */

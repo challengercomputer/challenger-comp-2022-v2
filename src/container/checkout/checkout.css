@@ -1,0 +1,131 @@
+#region {
+  width: 100%;
+  height: 55px;
+  background-color: var(--base-dark, #151d2a);
+  color: var(--base-inverted, white);
+  border: none;
+  padding: 0px 8px;
+}
+.modal-header {
+  border: none !important;
+}
+.modal-content {
+  width: 100% !important;
+  background-color: var(--base-dark, #141c23);
+  pointer-events: auto;
+  color: var(--base-inverted, white) !important ;
+  background-clip: padding-box;
+  border: 1px solid var(--base-white-10, rgba(0, 0, 0, 0.2));
+  border-radius: 0.3rem;
+  outline: 0;
+}
+.placing-order {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+#stackBottom-checkout {
+  background-color: var(--base-dark, rgba(22, 26, 38, 0.5));
+  color: white;
+  position: absolute;
+  -webkit-clip-path: polygon(
+    40px 0%,
+    calc(100% - 0px) 0%,
+    100% 0px,
+    /*right end*/ 100% calc(100% - 40px),
+    calc(100% - 40px) 100%,
+    10px 100%,
+    0% calc(100% - 0px),
+    0% 40px
+  );
+  clip-path: polygon(
+    40px 0%,
+    calc(100% - 0px) 0%,
+    100% 0px,
+    /*right end*/ 100% calc(100% - 40px),
+    calc(100% - 40px) 100%,
+    10px 100%,
+    0% calc(100% - 0px),
+    0% 40px
+  );
+  width: 92.5%;
+  height: 95%;
+  right: 9px !important;
+}
+#displayCard-checkout {
+  background: transparent !important;
+  color: white;
+  border: none; /*remove for test*/
+}
+.checkout-card {
+  margin: 35px !important;
+}
+#placeorder-checkout-btn {
+  background: transparent;
+  border: 1px solid var(--base-warning, #22f4ee);
+  font-weight: 500;
+  color: var(--base-warning, #22f4ee);
+  border-radius: 0;
+}
+
+#placeorder-checkout-btn:hover {
+  background: var(--base-warning, #22f4ee);
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--base-inverted, black);
+  border-radius: 0;
+}
+
+#payment-option-btn {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border: 1px solid gray;
+  font-weight: 500;
+  color: white;
+  border-radius: 0;
+  padding: 5px;
+}
+#payment-option-btn:hover {
+  cursor: pointer;
+  border: 1px solid var(--base-danger, red);
+}
+#update-address-btn:hover {
+  background: var(--base-danger, red);
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  border-radius: 0;
+}
+#update-address-btn {
+  background: transparent;
+  border: 1px solid var(--base-danger, red);
+  font-weight: 500;
+  color: var(--base-danger, red);
+  border-radius: 0;
+}
+#stackBottom-checkout:hover + #displayCard-checkout:hover {
+  cursor: pointer;
+}
+.MuiInputLabel-filled {
+  z-index: 1;
+  transform: translate(12px, 20px) scale(1);
+  pointer-events: none;
+  color: white !important;
+}
+.MuiFilledInput-input {
+  padding: 27px 12px 10px;
+  background: var(--base-white-a10, rgba(31, 48, 65, 0.4)) !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .loading-img {
+    text-align: center;
+  }
+  .hideNbsp {
+    display: none;
+  }
+  #payment-option-btn {
+    margin-top: 10px;
+  }
+}

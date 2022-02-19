@@ -1,0 +1,266 @@
+div#CCFilterHeader {
+  background: var(--base-white-a5, #161a26);
+  color: white;
+  text-transform: uppercase;
+}
+
+div#CCFilterCard {
+  background: transparent;
+  /* border: 1.5px solid var(--base-white-a5, #161a26); */
+  color: white;
+  border-radius: 0%;
+}
+
+.MuiTypography-body1 {
+  font-size: 15px !important;
+}
+/*************** CUSTOM CHECKBOX***************/
+
+.checkboxContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkboxContainer #checkboxInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  border: 1px solid var(--base-danger, #ec2434);
+}
+
+.checkboxContainer:hover #checkboxInput ~ .checkmark {
+  background-color: #370d17;
+}
+
+.checkboxContainer #checkboxInput:checked ~ .checkmark {
+  background-color: var(--base-danger, #ec2434);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkboxContainer #checkboxInput:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkboxContainer .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*************** CUSTOM RADIO BUTTON ***************/
+
+.radioContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radioContainer #radioInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  border: 1.3px solid var(--base-danger, #ec2434);
+  border-radius: 50%;
+}
+
+.radioContainer:hover #radioInput ~ .radiomark {
+  background-color: #370d17;
+}
+
+.radioContainer #radioInput:checked ~ .radiomark {
+  background-color: transparent;
+}
+
+.radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radioContainer #radioInput:checked ~ .radiomark:after {
+  display: block;
+}
+
+.radioContainer .radiomark:after {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--base-danger, #ec2434);
+}
+
+/**SLIDER**/
+
+.PrivateValueLabel-circle-13 {
+  width: 56px !important;
+  height: 32px;
+  display: flex;
+  transform: none !important;
+  align-items: center;
+  border-radius: 0% 0% 0% 0 !important;
+  justify-content: center;
+  background-color: #191c27 !important;
+}
+
+.PrivateValueLabel-label-14 {
+  transform: none !important;
+}
+
+.PrivateValueLabel-circle-26 {
+  width: 56px !important;
+  height: 32px;
+  display: flex;
+  transform: none !important;
+  align-items: center;
+  border-radius: 0% 0% 0% 0 !important;
+  justify-content: center;
+  background-color: #191c27 !important;
+}
+
+.PrivateValueLabel-label-27 {
+  transform: none !important;
+}
+
+.PrivateValueLabel-circle-27 {
+  width: 56px !important;
+  height: 32px;
+  display: flex;
+  transform: none !important;
+  align-items: center;
+  border-radius: 0% 0% 0% 0 !important;
+  justify-content: center;
+  background-color: #191c27 !important;
+}
+
+.PrivateValueLabel-label-28 {
+  transform: none !important;
+}
+
+.jss13 {
+  width: 56px !important;
+  height: 32px;
+  display: flex;
+  transform: none !important;
+  align-items: center;
+  border-radius: 0% 0% 0% 0 !important;
+  justify-content: center;
+  background-color: #191c27 !important;
+}
+
+.jss14 {
+  transform: none !important;
+}
+
+.jss18 {
+  width: 56px !important;
+  height: 32px;
+  display: flex;
+  transform: none !important;
+  align-items: center;
+  border-radius: 0% 0% 0% 0 !important;
+  justify-content: center;
+  background-color: #191c27 !important;
+}
+
+.jss19 {
+  transform: none !important;
+}
+
+.jss77 {
+  width: 56px !important;
+  height: 32px;
+  display: flex;
+  transform: none !important;
+  align-items: center;
+  border-radius: 0% 0% 0% 0 !important;
+  justify-content: center;
+  background-color: #191c27 !important;
+}
+
+.jss78 {
+  transform: none !important;
+}
+
+.PrivateValueLabel-circle-21 {
+  width: 56px !important;
+  height: 32px;
+  display: flex;
+  transform: none !important;
+  align-items: center;
+  border-radius: 0% 0% 0% 0 !important;
+  justify-content: center;
+  background-color: #191c27 !important;
+}
+
+.PrivateValueLabel-label-22 {
+  transform: none !important;
+}
+
+.MuiSlider-root {
+  width: 80% !important;
+  margin-left: 25px;
+}
+
+span.MuiSlider-thumb.PrivateValueLabel-open-2.PrivateValueLabel-thumb-1 {
+  background: var(--base-danger, #ec2434);
+}
+
+span.MuiSlider-root {
+  color: var(--base-danger, #ec2434);
+}
+
+.MuiSlider-valueLabel {
+  left: calc(-120% - 4px) !important;
+}
+
+.MuiIconButton-colorSecondary {
+  color: var(--base-danger, #f50057) !important;
+}
+@media only screen and (max-width: 992px) {
+  .filter {
+    display: none;
+  }
+}

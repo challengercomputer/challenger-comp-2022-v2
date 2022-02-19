@@ -1,0 +1,28 @@
+.name {
+  font-weight: 600;
+  font-size: 20px !important;
+}
+.sections {
+  padding-top: 10px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.sections:hover {
+  color: var(--bae-danger, red);
+}
+.MuiFormControl-root {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .account {
+    text-align: center;
+  }
+  .welcome {
+    display: inline-block !important;
+    text-align: center;
+  }
+  .welcome-container {
+    text-align: center;
+  }
+}

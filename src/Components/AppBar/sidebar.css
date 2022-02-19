@@ -1,0 +1,10 @@
+.MuiListItem-root {
+  padding-bottom: 0px !important;
+}
+.MuiMenuItem-root {
+  color: var(--base-inverted, white);
+}
+
+header .MuiTypography-root {
+  color: var(--base-inverted);
+}

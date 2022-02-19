@@ -1,0 +1,18 @@
+@each $i in (50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150) {
+  .py-#{$i},
+  .pt-#{$i} {
+    padding-top: #{$i}px;
+  }
+  .py-#{$i},
+  .pb-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+  .my-#{$i},
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .my-#{$i},
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+}

@@ -1,0 +1,87 @@
+/************************* MEDIA QUERIES *********************************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #originalPrice {
+      display: none;
+    }
+    #productTitle {
+      font-size: 16px !important;
+    }
+    #warranty {
+      display: none;
+    }
+    #productImage {
+      width: 93%;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    #originalPrice {
+      display: block;
+    }
+    #productTitle {
+      font-size: 18px !important;
+    }
+    #warranty {
+      display: block;
+    }
+    #productImage {
+      width: 73%;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    #originalPrice {
+      display: block;
+    }
+    #productTitle {
+      font-size: 18px !important;
+    }
+    #warranty {
+      display: block;
+    }
+    #productImage {
+      width: 73%;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    #originalPrice {
+      display: block;
+    }
+    #productTitle {
+      font-size: 18px !important;
+    }
+    #warranty {
+      display: block;
+    }
+    #productImage {
+      width: 60%;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    #originalPrice {
+      display: block;
+    }
+    #productTitle {
+      font-size: 18px !important;
+    }
+    #warranty {
+      display: block;
+    }
+  
+    #productImage {
+      width: 60%;
+    }
+  }
+  
+  #testtext {
+    font-size: 180px;
+  }
+  

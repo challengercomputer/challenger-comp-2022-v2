@@ -1,0 +1,12 @@
+.facebook-hover:hover{
+    color: blue;
+    cursor: pointer;
+}
+.instagram-hover:hover{
+    color: red;
+    cursor: pointer;
+}
+.twitter-hover:hover{
+    color:#1DA1F2;
+    cursor: pointer;
+}

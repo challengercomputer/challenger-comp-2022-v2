@@ -1,0 +1,74 @@
+.contact-area-top {
+  padding-top: var(--su-3);
+  padding-bottom: var(--su-3);
+  background: var(--base-warning);
+  -webkit-clip-path: polygon(
+    39px 0%,
+    calc(100% - 39px) 0%,
+    100% 66px,
+    /*right end*/ 100% calc(100% - 0px),
+    calc(100% - 40px) 100%,
+    10px 100%,
+    0% calc(100% - 0px),
+    0% 66px
+  );
+  clip-path: polygon(
+    39px 0%,
+    calc(100% - 39px) 0%,
+    100% 66px,
+    /*right end*/ 100% calc(100% - 0px),
+    calc(100% - 40px) 100%,
+    10px 100%,
+    0% calc(100% - 0px),
+    0% 66px
+  );
+}
+
+.footer-area {
+  background: var(--base-dark);
+
+  &__middle {
+    background: var(--base-darker);
+  }
+
+  &__social li {
+    display: inline-block;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 30px;
+      font-size: var(--fs-xl);
+    }
+  }
+
+  &__contactIcon {
+    --size: 60px;
+    --bg: var(--base-danger);
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-3xl);
+    border-radius: var(--radius-circle);
+    cursor: pointer;
+    color: var(--base-inverted);
+    background: var(--bg);
+    bottom: 10%;
+    right: 5%;
+    z-index: var(--z-sidebar);
+    transition: var(--transition-base);
+
+    &:hover,
+    &.active {
+      --bg: var(--base-warning);
+    }
+  }
+}
+/**
+ * Variables
+ */

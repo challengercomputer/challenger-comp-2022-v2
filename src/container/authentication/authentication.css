@@ -1,0 +1,99 @@
+.logo-adjust{
+    margin-left: 10px;
+}
+.close-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: -10px;
+    font-size: 55px;
+}
+.btn-outline-dark {
+    margin-bottom: 10px;
+    color: white;
+    border-color: white;
+    width: 100%;
+    padding: 15px;
+}
+.btn-outline-dark:hover {
+    color: #141C23;
+    background-color: white;
+    border-color: white;
+}
+.google-button {
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    padding:5px 55px 5px !important;
+    background: white;
+    color: black !important;
+    font-size: 17px !important;
+    border-color: black;
+    border-radius: 4px !important;
+}
+.google-button:hover {
+    background: rgba(255, 255, 255, 0.842);
+    color: black;
+    border-color: black;
+}
+.facebook-button {
+    display: flex;
+    width: 100%;
+    padding:16px 55px 0px;
+    background: #3d5c95;
+    color: white;
+    border-color: #3d5c95; 
+    border: none;
+    border-radius: 4px;
+}
+.facebook-button:focus {
+    background: #3d5c95;
+    color: white;
+}
+.facebook-button:active {
+    background: #3d5c95 !important;
+    box-shadow: none !important;
+}
+.facebook-button:hover {
+    background: #3d5c95c7;
+    color: white;
+    border-color: #3d5c95;
+}
+.MuiInputAdornment-positionEnd {
+    cursor: pointer;
+    color: gray;
+    font-size: 20px;
+}
+.MuiInputLabel-filled {
+    z-index: 1;
+    transform: translate(12px, 20px) scale(1);
+    pointer-events: none;
+    color: white !important;
+}
+.MuiFilledInput-input {
+    padding: 27px 12px 10px;
+    background: rgba(31, 48, 65, 0.4) !important;
+}
+
+@media only screen and (max-width:600px){
+    .close-icon{
+        font-size: 42px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .google-button {
+        padding:5px 90px 5px !important;
+    }
+    .facebook-button {
+        padding:10px 90px 0px !important;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .google-button {
+        padding:5px 30px 5px !important;
+    }
+    .facebook-button {
+        padding:10px 30px 0px !important;
+    }
+}

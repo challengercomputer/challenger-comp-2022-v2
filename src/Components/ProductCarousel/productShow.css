@@ -1,0 +1,174 @@
+.slick-track {
+  height: 100% !important;
+}
+
+#originalPrice2 {
+  color: #6c757d;
+  text-decoration: line-through;
+  padding-left: 38px;
+}
+
+.previous-button {
+  -webkit-clip-path: polygon(
+    10px 0%,
+    calc(100% - 0px) 0%,
+    100% 0px,
+    /*right end*/ 100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0% calc(100% - 0px),
+    0% 10px
+  );
+  clip-path: polygon(
+    10px 0%,
+    calc(100% - 0px) 0%,
+    100% 0px,
+    /*right end*/ 100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0% calc(100% - 0px),
+    0% 10px
+  );
+  border-radius: 0px;
+  background: var(--base-white-a10, #393b42);
+  border: none;
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.previous-button:hover {
+  background: var(--base-danger, #e50926);
+}
+
+.next-button:hover {
+  background: var(--base-danger, #e50926);
+}
+
+.previous-button:focus {
+  background: var(--base-danger, #e50926);
+}
+
+.next-button:focus {
+  background: var(--base-danger, #e50926);
+}
+
+.next-button {
+  -webkit-clip-path: polygon(
+    0px 0%,
+    calc(100% - 10px) 0%,
+    100% 10px,
+    /*right end*/ 100% calc(100% - 0px),
+    calc(100% - 0px) 100%,
+    10px 100%,
+    0% calc(100% - 10px),
+    0% 0px
+  );
+  clip-path: polygon(
+    0px 0%,
+    calc(100% - 10px) 0%,
+    100% 10px,
+    /*right end*/ 100% calc(100% - 0px),
+    calc(100% - 0px) 100%,
+    10px 100%,
+    0% calc(100% - 10px),
+    0% 0px
+  );
+  border-radius: 0px;
+  background: var(--base-white-a10, #393b42);
+  border: none;
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.slick-slider.slick-vertical.slick-initialized {
+  margin-top: 60px;
+}
+
+.slick-vertical .slick-slide {
+  padding-bottom: 20px;
+}
+
+/******CARDS CUT******/
+
+#stackBottomDisplay {
+  background: var(--base-dark, #393b42) !important;
+  position: absolute;
+  -webkit-clip-path: polygon(
+    40px 0%,
+    calc(100% - 0px) 0%,
+    100% 0px,
+    /*right end*/ 100% calc(100% - 40px),
+    calc(100% - 40px) 100%,
+    10px 100%,
+    0% calc(100% - 0px),
+    0% 40px
+  );
+  clip-path: polygon(
+    40px 0%,
+    calc(100% - 0px) 0%,
+    100% 0px,
+    /*right end*/ 100% calc(100% - 40px),
+    calc(100% - 40px) 100%,
+    10px 100%,
+    0% calc(100% - 0px),
+    0% 40px
+  );
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .vertical-carousel {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #stackBottomDisplay {
+    display: block;
+  }
+  .vertical-carousel {
+    display: none;
+    transition: 5s ease-in-out !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #stackBottomDisplay {
+    display: block;
+  }
+  .vertical-carousel {
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #stackBottomDisplay {
+    width: 88%;
+    height: 100%;
+    display: block;
+  }
+  .vertical-carousel {
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #stackBottomDisplay {
+    width: 88%;
+    height: 100%;
+    display: block;
+  }
+  .vertical-carousel {
+    display: block;
+  }
+}

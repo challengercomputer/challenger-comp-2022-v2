@@ -1,0 +1,156 @@
+.el-btn {
+  font-size: var(--btn-fs, var(--fs-sm));
+  font-weight: 600;
+  display: inline-block;
+  padding: var(
+    --btnPadding,
+    var(--btn-paddingY, var(--su-2)) var(--btn-paddingX, var(--su-6))
+  );
+  border-radius: var(--radius-0) !important;
+  cursor: pointer;
+  background: var(--btn-bg, transparent);
+  color: var(--btn-color, var(--base-inverted));
+  position: relative;
+  box-shadow: inset 2px 2px 2px 0px var(--base-white-a5),
+    7px 7px 20px 0px var(--base-white-a5), 4px 4px 5px 0px var(--base-white-a5);
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  line-height: var(--btn-lh, 1.6);
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+
+  &__danger {
+    --btn-color: var(--base-danger);
+    --btn-lh: 1.2;
+    border: 1px solid var(--base-danger);
+    box-shadow: none;
+    overflow: hidden;
+    transition: 0.1s;
+
+    &:hover {
+      --btn-bg: var(--base-danger);
+      color: var(--base-inverted) !important;
+      border: none;
+      box-shadow: 0 0 2px var(--base-danger), 0 0 8px var(--base-danger),
+        0 0 8px var(--base-danger);
+      transition-delay: 0.3s;
+
+      &:hover span:nth-child(1) {
+        left: 100%;
+        transition: 1s;
+      }
+
+      &:hover span:nth-child(3) {
+        right: 100%;
+        transition: 1s;
+      }
+    }
+
+    span {
+      position: absolute;
+      display: block;
+
+      &:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--base-danger));
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(260deg, transparent, var(--base-danger));
+      }
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    opacity: 0.65;
+    pointer-events: none;
+    cursor: no-drop;
+  }
+
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  &-outline-dashed {
+    outline: 1px dashed var(--borderColor, var(--base-inverted));
+    outline-offset: -5px;
+    -moz-outline-radius: 25px;
+  }
+
+  @each $i, $v,
+    $h
+      in (
+        "light" "var(--base-inverted)" "var(--base-dark)",
+        "warning" "var(--base-warning)" "var(--base-inverted)"
+      )
+  {
+    &-outline-#{$i} {
+      border: 1px solid #{$v};
+
+      &:hover {
+        background: #{$v};
+        color: #{$h};
+      }
+    }
+  }
+
+  &-outline-dashed {
+    outline: 1px dashed var(--outlineColor, currentColor);
+    outline-offset: -5px;
+    -moz-outline-radius: 25px;
+  }
+
+  @each $name, $bg,
+    $color
+      in (
+        "light" "var(--base-0)" "var(--base-dark)",
+        "muted" "var(--base-40)" "var(--base-dark)",
+        "danger" "var(--base-danger)" "var(--base-inverted)",
+        "warning" "var(--base-warning)" "var(--base-inverted)",
+        "warning-a10" "var(--base-warning-a10)" "var(--base-warning)",
+        "success" "var(--base-success)" "var(--base-inverted)",
+        "success-a10" "var(--base-success-a10)" "var(--base-success)"
+      )
+  {
+    &-#{$name},
+    &-#{$name}:hover {
+      background: #{$bg};
+      color: #{$color};
+    }
+
+    &-#{$name}:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &-sm {
+    --btnPadding: 0.25rem 1rem;
+    --btn-lh: 1.5;
+    --btn-fs: var(--fs-xs);
+  }
+}
+
+.btn {
+  border-radius: 0px !important;
+}

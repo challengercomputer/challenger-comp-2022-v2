@@ -1,0 +1,20 @@
+.close-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: -5px;
+  font-size: var(--fs-4xl);
+}
+
+@media only screen and (max-width: 600px) {
+  .spec-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+}

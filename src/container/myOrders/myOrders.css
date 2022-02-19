@@ -1,0 +1,66 @@
+.order-image{
+    height: 80px;
+    margin: 10px 45px;
+}
+.order-headings{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.more-details{
+    cursor: pointer;
+    margin-right:60px;
+    border-bottom:1px solid;
+}
+
+.progress {
+    height: 3px;
+}
+.RSPBprogressBar {
+    height: 3px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    /* text-shadow: 0 1px 0 #fff; */
+    opacity: .5;
+    color: white;
+    font-size: 28px;
+}
+.pointer {
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .order-delivery{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .order-description{
+        margin-left: 25px;
+    }
+    .order-delivery{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .more-details{
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .order-image {
+        margin: 10px 15px;
+    }
+    .order-delivery {
+        margin-right: 10px;
+    }
+  }
+
+ 

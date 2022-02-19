@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  --container-xxl: 1370px;
+  margin: 0;
+  font-size: var(--fs-md, 16px);
+  font-family: var(--ff-body, "Open Sans", sans-serif);
+  background-color: var(--base-darker);
+  background-image: var(--gradient-dark);
+  color: var(--base-40, #606060);
+  font-weight: normal;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+svg,
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+svg,
+img,
+.btn,
+.button {
+  -webkit-transition: var(--transition-base);
+  transition: var(--transition-base);
+}
+
+a:focus,
+.btn:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+a:hover {
+  color: var(--base-danger, #08090a);
+  text-decoration: none;
+}
+
+a,
+button {
+  color: var(--base-30, #001d23);
+  outline: medium none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--base-inverted, #274251);
+  font-family: var(--ff-heading, "Open Sans", sans-serif);
+  font-weight: 700;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: var(--base-inverted, #274251);
+}
+
+.h1,
+h1 {
+  font-size: var(--fs-4xl);
+  line-height: 1.4;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.h2,
+h2 {
+  font-size: var(--fs-3xl);
+  line-height: 1.3;
+}
+
+.h3,
+h3 {
+  font-size: var(--fs-2xl);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.h4,
+h4 {
+  font-size: var(--fs-xl);
+}
+
+.h5,
+h5 {
+  font-size: var(--fs-lg);
+}
+
+.h6,
+h6 {
+  font-size: var(--fs-md);
+  line-height: 1.5;
+}
+
+p {
+  font-size: var(--fs-md, 16px);
+  font-weight: normal;
+  line-height: 1.7;
+  color: var(--base-40, #606060);
+  letter-spacing: 0px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+hr {
+  border-bottom: 1px solid var(--border-color);
+  border-top: 0 none;
+  margin: var(--hr-height, 30px 0);
+  padding: 0;
+
+  @each $break in (sm) {
+    &.hr-#{$break} {
+      --hr-height: 1rem 0;
+    }
+  }
+
+  @each $name,
+    $color in ("light" "var(--base-white-a5)", "dark" "var(--base-black-a5)")
+  {
+    &.hr-#{$name} {
+      --border-color: #{$color};
+    }
+  }
+}
+
+*::-moz-selection {
+  background: var(--base-warning);
+  color: var(--base-inverted);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--base-warning);
+  color: var(--base-inverted);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--base-warning);
+  color: var(--base-inverted);
+  text-shadow: none;
+}
+
+*::-webkit-input-placeholder {
+  color: var(--base-40, #555555);
+  font-size: 80%;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: var(--base-40, #555555);
+  font-size: 80%;
+  opacity: 1;
+}
+
+*::-ms-input-placeholder {
+  color: var(--base-40, #555555);
+  font-size: 80%;
+  opacity: 1;
+}
+
+*::placeholder {
+  color: var(--base-40, #555555);
+  font-size: 80%;
+  opacity: 1;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--base-white-a5);
+  border-radius: var(--radius-md);
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: var(--radius-md);
+  background-color: var(--base-white-a5);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbarColor, var(--base-danger));
+  border-radius: var(--radius-md);
+  border: 1px solid var(--base-white-a30);
+}
+
+@each $i in (uppercase, capitalize, lowercase) {
+  .txt-#{$i} {
+    text-transform: #{$i};
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--linkColor, var(--base-40));
+
+  &:hover {
+    color: var(--linkHover, var(--base-danger));
+  }
+}
+
+@for $i from 1 to 20 {
+  .lh-#{$i} {
+    line-height: calc(#{$i} / 10 + 1);
+  }
+}
+
+@each $i in (sm, md, lg, xl, 2xl, 3xl, 4xl, 5xl) {
+  .fs-#{$i} {
+    font-size: var(--fs-#{$i});
+  }
+}
+// FONT WEIGHT
+@each $i
+  in (light, regular, medium, bold, 100, 200, 300, 400, 500, 600, 700, 800)
+{
+  .fw-#{$i} {
+    font-weight: #{$i};
+  }
+}
+
+.c-pointer {
+  cursor: pointer;
+}

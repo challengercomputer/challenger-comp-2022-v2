@@ -1,0 +1,127 @@
+.product-specifications {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--base-40, #a1a9b0);
+  text-align: justify;
+  line-height: 2;
+}
+#productTitle-product {
+  color: white;
+}
+.final-price-column {
+  color: var(--base-warning, #22f4ee);
+  /* color: yellow; */
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/************************* MEDIA QUERIES *********************************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #originalPrice {
+    display: none;
+  }
+  #productTitle {
+    font-size: 16px !important;
+  }
+  #productTitle-product {
+    font-size: 16px !important;
+  }
+
+  #warranty {
+    display: none;
+  }
+  #productImage {
+    width: 160px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #originalPrice {
+    display: block;
+  }
+  #productTitle {
+    font-size: 18px !important;
+  }
+  #productTitle-product {
+    font-size: 16px !important;
+  }
+  #warranty {
+    display: block;
+  }
+  #productImage {
+    width: 73%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #originalPrice {
+    display: block;
+  }
+  #productTitle {
+    font-size: 18px !important;
+  }
+  #productTitle-product {
+    font-size: 16px !important;
+  }
+  #warranty {
+    display: block;
+  }
+  #productImage {
+    width: 73%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #originalPrice {
+    display: block;
+  }
+  #productTitle {
+    font-size: 18px !important;
+  }
+  #productTitle-product {
+    font-size: 16px !important;
+  }
+  #warranty {
+    display: block;
+  }
+  #productImage {
+    width: 60%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #originalPrice {
+    display: block;
+  }
+  #productTitle {
+    font-size: var(--fs-xl, 20px) !important;
+    color: var(--base-inverted);
+    font-weight: 600;
+  }
+  #productTitle-product {
+    font-size: 18px !important;
+  }
+  #warranty {
+    display: block;
+  }
+
+  #productImage {
+    width: 60%;
+  }
+}
+
+#testtext {
+  font-size: 180px;
+}
+
+.product-title {
+  text-transform: capitalize;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <link rel="stylesheet" href="./email.css"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{
+        background: beige;
+        font-family: sans-serif;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      table {
+        width: 100%;
+      }
+      th, td{
+        padding: 1%;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="border:1px solid">
+      <div style="display: flex;align-items: center;">
+        <img height="100" style="padding: 10px;border-radius: 20px;opacity: 0.9;" src="https://i.ibb.co/FY7Dc7v/Whats-App-Image-2020-11-03-at-2-46-52-PM.jpg" alt="Logo"/>
+        <h4>CHALLENGER COMPUTERS PVT. LTD</h4>
+      </div>
+    </header>
+    <section>
+      <div style="margin-top: 40px;">
+        <b>Date:</b> {{createdAt}}
+        <br/><br/>
+        <b>Order ID:</b> {{razorpayOrder}}
+      </div>
+      <div style="margin-top: 40px;">
+        <b>BILL FROM:</b>
+        <p>Challenger Computers,</p>
+        <p>Karnataka Bank Ltd, 839 A, Heera Market, 1st Floor, Anna Salai,</p>
+        <p>Chennai, Tamil Nadu 600002.</p>
+      </div>
+      <div style="margin-top: 40px;">
+        <b>BILL TO:</b>
+        <p>{{deliveryInformation.fullname}}</p>
+        <p>{{deliveryInformation.address}}</p>
+      </div>
+      <table style="margin-top: 30px;">
+        <tr style="background-color: #dddddd;">
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Line Total</th>
+        </tr>
+       {{#each items}}
+        <tr>
+          <td>{{itemName}}</td>
+          <td>{{quantity}}</td>
+          <td>{{price}}</td>
+        </tr>
+         {{/each}}
+        <tr>
+          <td style="visibility: hidden;"></td>
+          <td>TOTAL</td>
+          <td>{{amount}}</td>
+        </tr>
+      </table>
+    </section>
+    <footer style="background-color: darkcyan;margin-top:40px">
+      <div style="text-align: center;padding:30px;font-size: 20px">
+        &#174; Challenger computers pvt ltd. Karnataka Bank Ltd, 839 A, Heera Market, 1st Floor, Anna Salai, Chennai, Tamil Nadu 600002.
+      </div>
+    </footer>
+  </body>
+</html>

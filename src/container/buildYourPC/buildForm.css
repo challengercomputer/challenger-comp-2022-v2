@@ -1,0 +1,292 @@
+label:before {
+  position: absolute;
+  z-index: 100;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#gamesSelect:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+figure:hover + span {
+  bottom: -36px;
+  opacity: 1;
+}
+
+div.sticky {
+  position: sticky;
+  display: block;
+  z-index: 1;
+  top: 0;
+}
+
+/*Pick your budget Button*/
+#budgetDesktop {
+  position: relative;
+  display: inline-block;
+  padding: var(--su-2) var(--su-5);
+  color: var(--base-danger, #e50926) !important;
+  text-align: center;
+  border: 1px solid var(--base-danger, #e50926);
+  overflow: hidden;
+  transition: 0.1s;
+  cursor: pointer;
+}
+#budgetDesktop:hover {
+  color: var(--base-inverted, white) !important;
+  border: none;
+  background: var(--base-danger, #e50926);
+  box-shadow: 0 0 2px var(--base-danger, #e50926),
+    0 0 8px var(--base-danger, #e50926), 0 0 8px var(--base-danger, #e50926);
+  transition-delay: 0.3s;
+}
+
+#budgetDesktop-disable {
+  position: relative;
+  display: inline-block;
+  padding: 13px 30px;
+  color: var(--base-danger, #e50926) !important;
+  text-align: center;
+  border: 1px solid var(--base-danger, #e50926);
+  overflow: hidden;
+  transition: 0.1s;
+  cursor: no-drop;
+  opacity: 0.6;
+}
+
+#budgetDesktop span {
+  position: absolute;
+  display: block;
+}
+
+#budgetDesktop span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--base-danger, #e50926));
+}
+
+#budgetDesktop:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+#budgetDesktop span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(260deg, transparent, var(--base-danger, #e50926));
+}
+
+#budgetDesktop:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+}
+
+#budgetDesktop span {
+  position: absolute;
+  display: block;
+}
+
+#budgetDesktop span {
+  position: absolute;
+  display: block;
+}
+
+.wishlist-btn-suggest:hover {
+  box-shadow: 0 0 2px rgb(34, 244, 238, 0.2), 0 0 8px rgb(34, 244, 238, 0.2),
+    0 0 8px rgb(34, 244, 238, 0.2);
+  color: black !important;
+  background: #22f4ee !important;
+}
+.wishlist-btn-suggest {
+  padding: 8px 12px 8px 12px !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  background: rgb(34, 244, 238, 0.2) !important;
+  color: #22f4ee !important;
+  border: none !important;
+  font-size: 16px !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+.wishlist-btn-suggest-disabled {
+  padding: 8px 12px 8px 12px !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  background: rgb(34, 244, 238, 0.2) !important;
+  color: #22f4ee !important;
+  border: none !important;
+  font-size: 16px !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+.wishlist-btn-suggest-disabled:hover {
+  box-shadow: 0 0 2px rgb(34, 244, 238, 0.2), 0 0 8px rgb(34, 244, 238, 0.2),
+    0 0 8px rgb(34, 244, 238, 0.2);
+  color: black !important;
+  cursor: no-drop;
+}
+.addtocart-btn-customize {
+  padding: 8px 12px 8px 12px !important;
+  /* margin-left: 18px !important; */
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  background: var(--base-danger, #e50926) !important;
+  color: white !important;
+  border: none !important;
+  font-size: 16px !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+.addtocart-btn-customize:hover {
+  box-shadow: 0 0 2px rgba(236, 36, 52, 0.8), 0 0 8px rgba(236, 36, 52, 0.8),
+    0 0 8px rgba(236, 36, 52, 0.8);
+}
+.addtocart-btn-customize-disabled {
+  padding: 8px 12px 8px 12px !important;
+  /* margin-left: 18px !important; */
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  background: #83696b !important;
+  color: white !important;
+  border: none !important;
+  font-size: 16px !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+.addtocart-btn-customize-disabled:hover {
+  background: #83696b !important;
+  cursor: no-drop !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #budgetDesktopCol {
+    display: none;
+  }
+  #gamesSelect {
+    width: 100%;
+    height: auto;
+    /* width: 102px;
+    height: 143px; */
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  :checked + label:before {
+    content: "";
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #budgetDesktopCol {
+    display: none;
+  }
+  #gamesSelect {
+    width: 100%;
+    height: auto;
+    /* width: 102px;
+    height: 143px; */
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  :checked + label:before {
+    content: "";
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #budgetDesktopCol {
+    display: none;
+  }
+  #gamesSelect {
+    width: 100%;
+    height: auto;
+    /* width: 133.2px;
+    height: 186.6px; */
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  :checked + label:before {
+    content: "";
+  }
+}
+@media only screen and (max-width: 992px) {
+  #budgetDesktopCol {
+    display: none;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #budgetDesktopCol {
+    display: block;
+  }
+  #gamesSelect {
+    width: 100%;
+    height: auto;
+    /* width: 133.2px;
+    height: 186.6px; */
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  :checked + label:before {
+    content: "";
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #budgetDesktopCol {
+    display: block;
+  }
+  #gamesSelect {
+    width: 100%;
+    height: auto;
+    /* width: 133.2px;
+    height: 186.6px; */
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  :checked + label:before {
+    background-image: url("./assets/gameselectionPC.svg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.select-item-label {
+  position: relative;
+}
+.Component-track-26,
+.MuiLinearProgress-bar {
+  background-color: var(--base-danger, #e50926) !important;
+}
+
+.Component-switchBase-24.Component-checked-27 + .Component-track-26 {
+  background-color: var(--base-warning, #0071c5);
+}

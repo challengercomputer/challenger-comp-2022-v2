@@ -1,0 +1,116 @@
+.HeroSlider {
+  min-height: 750px;
+
+  &__title {
+    font-size: var(--hero-title-fs, 3.5rem);
+  }
+}
+
+.statistics-area {
+  padding-top: 120px;
+  padding-bottom: 70px;
+  background-color: var(--base-dark);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0, 0, 0);
+  transform: translateZ(0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+
+  &__single {
+    margin-bottom: 50px;
+  }
+}
+
+.features-area {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000;
+  -webkit-perspective: 1000;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.explore__nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  li {
+    padding: var(--su-3) var(--su-7);
+    font-size: var(--fs-md);
+    text-transform: uppercase;
+    background: var(--explote-nav-item-bg, var(--base-dark-light));
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 1px;
+
+    &.active {
+      --explote-nav-item-bg: var(--base-inverted);
+      color: var(--base-70);
+    }
+
+    &:first-child {
+      -webkit-clip-path: polygon(
+        0px 0%,
+        calc(100% - 0px) 0%,
+        100% 0px,
+        /*right end*/ 100% calc(100% - 0px),
+        calc(100% - 0px) 100%,
+        18px 100%,
+        0% calc(100% - 18px),
+        0% 0px
+      );
+      clip-path: polygon(
+        0px 0%,
+        calc(100% - 0px) 0%,
+        100% 0px,
+        /*right end*/ 100% calc(100% - 0px),
+        calc(100% - 0px) 100%,
+        18px 100%,
+        0% calc(100% - 18px),
+        0% 0px
+      );
+    }
+
+    &:last-child {
+      -webkit-clip-path: polygon(
+        10px 0%,
+        calc(100% - 0px) 0%,
+        100% 0px,
+        /*right end*/ 100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        0% calc(100% - 0px),
+        0% 10px
+      );
+      clip-path: polygon(
+        0px 0%,
+        calc(100% - 18px) 0%,
+        100% 18px,
+        /*right end*/ 100% calc(100% - 0px),
+        calc(100% - 0px) 100%,
+        0px 100%,
+        0% calc(100% - 0px),
+        0% 0px
+      );
+    }
+  }
+}
+
+.reviews-area {
+  background: var(--base-dark);
+}
